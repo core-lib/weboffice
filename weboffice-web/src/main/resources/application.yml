@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: WebOffice
+  datasource:
+    url: jdbc:mysql://localhost:3306/weboffice?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+sqlman:
+  script:
+    location: sqlman/**/*.sql
+  dialect:
+    table: weboffice_schema_version

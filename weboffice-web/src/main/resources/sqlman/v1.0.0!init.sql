@@ -1,0 +1,1 @@
+DELETE FROM weboffice_schema_version;
